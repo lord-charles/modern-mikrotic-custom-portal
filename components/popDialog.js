@@ -33,6 +33,7 @@ export default function AlertDialogSlide({ open, setOpen }) {
         <DialogTitle className="text-center">
           {"System update complete!"}
         </DialogTitle>
+
         <DialogContent className="space-y-3 flex flex-col">
           <div className="flex items-center">
             <svg
@@ -47,6 +48,7 @@ export default function AlertDialogSlide({ open, setOpen }) {
               selecting the 'Balance' tab.
             </DialogContentText>
           </div>
+
           <div className="flex items-center">
             <svg
               className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0"
@@ -86,6 +88,28 @@ export default function AlertDialogSlide({ open, setOpen }) {
             <DialogContentText id="alert-dialog-slide-description">
               New here? Explore our free system walkthrough tutorial on the
               homepage under 'How It Works'.
+            </DialogContentText>
+          </div>
+          <div className="flex items-center">
+            <svg
+              className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0"
+              viewBox="0 0 12 12"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+            </svg>
+
+            <DialogContentText id="alert-dialog-slide-description">
+              To check your balance, revisit this page at
+              <a
+                className="text-purple-700 ml-2 underline"
+                href="https://wifi.classicresidence.co.ke/"
+              >
+                wifi.classicresidence.co.ke
+              </a>
+              . This service is entirely free, and you can access it without an
+              active voucher. The website remains free as long as you are
+              connected to any ClassicsNet Pro network.
             </DialogContentText>
           </div>
         </DialogContent>
