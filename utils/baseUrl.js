@@ -1,1 +1,1 @@
-export const base_url = "https://lime-nervous-oyster.cyclic.app/";
+export const base_url = "https://api.charlesmwaniki.com/";
