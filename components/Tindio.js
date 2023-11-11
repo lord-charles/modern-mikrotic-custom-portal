@@ -17,7 +17,7 @@ const TidioChat = () => {
   return (
     <Helmet>
       <script
-        src="//api.charlesmwaniki.com/cs/tidio"
+        src="//code.tidio.co/txkewoad3m6ljztgupk3qynve1zmunpr.js"
         async
       ></script>
     </Helmet>
