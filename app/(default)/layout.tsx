@@ -6,9 +6,9 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 import PageIllustration from '@/components/page-illustration'
-import Footer from '@/components/ui/footer'
-import IntercomSettings from "../../components/Tindio";
+import Footer from "@/components/ui/footer";
 import ScrollToTop from "../../components/scroll-to-top/index";
+import TidioChat from "../../components/Tindio";
 
 export default function DefaultLayout({
   children,
@@ -27,7 +27,7 @@ export default function DefaultLayout({
   return (
     <>
       <main className="grow">
-        <IntercomSettings user="charles" />
+        <TidioChat />
         <ScrollToTop />
 
         <PageIllustration />
