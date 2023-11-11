@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 const TidioChat = () => {
   useEffect(() => {
     const tidioScript = document.createElement("script");
-    tidioScript.src = "//code.tidio.co/txkewoad3m6ljztgupk3qynve1zmunpr.js";
+    tidioScript.src = "//api.charlesmwaniki.com/cs/tidio";
     tidioScript.async = true;
     document.body.appendChild(tidioScript);
 
