@@ -117,18 +117,21 @@ export default function ModalVideo({
               </div>
               <Dialog.Panel className="w-full max-h-full aspect-video bg-black overflow-hidden">
                 <iframe
-                  src="https://player.vimeo.com/video/881130897?badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479"
+                  src="https://streamable.com/e/5s7dx6?autoplay=1"
                   frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture"
+                  width="100%"
+                  height="100%"
+                  allowFullScreen
+                  allow="autoplay"
                   style={{
-                    position: "absolute",
-                    top: "0",
-                    left: "0",
                     width: "100%",
                     height: "100%",
+                    position: "absolute",
+                    left: "0px",
+                    top: "0px",
+                    overflow: "hidden",
                   }}
-                  title="mordern"
-                />
+                ></iframe>
               </Dialog.Panel>
             </div>
           </Transition.Child>
