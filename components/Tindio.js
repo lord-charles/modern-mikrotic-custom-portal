@@ -1,26 +1,27 @@
+"use client";
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
-const IntercomSettings = ({ user }) => {
- useEffect(() => {
-   // Create a new script element
-   const script = document.createElement("script");
+const TidioChat = () => {
+  useEffect(() => {
+    const tidioScript = document.createElement("script");
+    tidioScript.src = "//code.tidio.co/txkewoad3m6ljztgupk3qynve1zmunpr.js";
+    tidioScript.async = true;
+    document.body.appendChild(tidioScript);
 
-   // Set the source attribute to the URL of the external script
-   script.src = "//fw-cdn.com/11042863/3783723.js";
+    return () => {
+      document.body.removeChild(tidioScript);
+    };
+  }, []);
 
-   // Set any other attributes, such as chat='true'
-   script.setAttribute("chat", "true");
-
-   // Append the script element to the document's head
-   document.head.appendChild(script);
-
-   // Clean up: Remove the script when the component unmounts
-   return () => {
-     document.head.removeChild(script);
-   };
- }, []);
-
-  return null; // This component doesn't render any visible content
+  return (
+    <Helmet>
+      <script
+        src="//code.tidio.co/txkewoad3m6ljztgupk3qynve1zmunpr.js"
+        async
+      ></script>
+    </Helmet>
+  );
 };
 
-export default IntercomSettings;
+export default TidioChat;
